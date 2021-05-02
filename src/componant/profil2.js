@@ -18,7 +18,7 @@ export default class profil2 extends Component {
             Job: "| informaticien ",
             Bio: 
             "|| Bio : La meilleure revanche c'est de passer à autre chose et de continuer à réussir." ,          
-            Photo: {raccord}
+            Photo: raccord
         })
         // this.setState ({
         //     job: <Profession job = 'teacher' />
@@ -28,6 +28,7 @@ export default class profil2 extends Component {
         return (
             <div>
                 <h1>  {this.state.User} {this.state.Job} {this.state.Bio} </h1>
+                <img  src= {this.state.Photo} />
                 <button onClick={this.Afficher}> User </button> 
             </div>
         )
